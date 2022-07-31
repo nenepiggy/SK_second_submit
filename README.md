@@ -50,43 +50,32 @@
 
 ## 5. 代码结构与简要说明
 
-### 5.1 代码结构
-
-- 列出代码目录结构
+- 代码目录结构如下
 
 ```undefined
-./repo_template               # 项目文件夹名称，可以修改为自己的文件夹名称
-|-- config                    # 配置类文件夹
-|   ├── competition.json      # 项目配置信息文件
-|-- dataset                   # 数据集类文件夹
-|   ├── dataset.py            # 数据集代码文件
-|-- log                       # 日志类文件夹
-|   ├── train.log             # 训练日志文件
-|-- model                     # 模型类文件夹
-|   ├── full_regression.pkl   # 训练好的模型文件
+./ShengKe_submit              # 项目文件夹名称
+|-- data                      # 数据集类文件夹
+|   ├── my_data.npy           # 数据集
+|   ├── CNN_pred_train.npy    # CNN预测的训练集结果
+|   ├── CNN_pred_valid.npy    # CNN预测的验证集结果，用以双模型法的初分类
+|   ├── CNN_pred_test.npy     # CNN预测的测试集结果，用以双模型法的初分类
+|   ├── CNN_short_pred_valid.npy    # 短寿命CNN预测的验证集结果
+|   ├── CNN_short_pred_test.npy     # 短寿命CNN预测的测试集结果
 |-- preprocess                # 预处理类文件夹
-|   ├── preprocess.py         # 数据预处理代码文件
-|-- tools                     # 工具类文件夹
-|   ├── train.py              # 训练代码文件
-|   ├── eval.py               # 验证代码文件
-|-- main.py                   # 项目主文件
+|   ├── LoadMatData.m         
+|   ├── PickMatData.m
+|   ├── load_mat_to_python.py
+|-- CNN_model                 # CNN法文件夹
+|   ├── Elanet.py             # 弹性网络复现
+|   ├── withCNN.py            # CNN的训练、测试
+|   ├── withCNN_2d.py         # 二维CNN的训练、测试
+|-- double_model              # 长短寿命双模型法
+|   ├── short_life_model_CNN.py    # 短寿命模型，CNN法
+|   ├── double_model_expect.py     # 有望得到的长短寿命双模型法的最优精度
+|   ├── double_model_real.py       # 实际得到的长短寿命双模型法的最优精度
 |-- README.md                 # 中文用户手册
-|-- LICENSE                   # LICENSE文件
+|-- 昇科比赛开发报告.docx      # 详细开发报告
 ```
-
-### 5.2 代码简要说明
-
-- 说明代码文件中的类以及主要函数功能
-
-```undefined
-# 示例
-./dataset.py               # 数据集代码文件
-|-- class Dataset          # 数据集类
-|   ├── get_feature        # 类主函数，返回可用于训练的数据集
-|   ├── train_val_split    # 划分train&val数据集
-```
-
-
 
 ## 6. LICENSE
 
@@ -100,4 +89,5 @@
 
 - **[Data-driven prediction of battery cycle life before capacity degradation](https://doi.org/10.1038/s41560-019-0356-8)**
 
+- **[A convolutional neural network model for battery capacity fade curve prediction using early life data](https://doi.org/10.1038/s41560-019-0356-8)**
   
