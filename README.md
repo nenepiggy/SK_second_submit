@@ -27,7 +27,9 @@
 
 - 本项目所用的数据文件对原始数据文件做了精简，为方便验证，可直接下载my_data.npy放在data文件夹中，下载地址：https://share.weiyun.com/Y4onAhzX
 - 也可选择通过preprocess文件夹中预处理文件，在原始数据文件（原文作者提供的batch....mat数据集）的基础上获取my_data.npy。
-  - LoadMatData.m 
+  - LoadMatData.m 用以将batch数据加载到Matlab工作区
+  - PickMatData.m 用以将原始数据中不重要的、未用到的数据剔除，并生成一个mat格式的精简数据simplified2.mat
+  - load_mat_to_python.py 用以读取simlified2.mat并存储成npy格式
 
 
 ## 4. 开始使用
