@@ -44,11 +44,9 @@
 ### 4.2 长短寿命双模型法
 
 - 该方法的具体信息请见文档“昇科比赛开发报告.docx”。
-- 依次执行withCNN_short.py和double_model_expect.py，是有望得到的长短寿命双模型法的最优精度。
-
-### 4.3 项目主文件
-
-- 在这里简单说明一下项目主文件（main.py）的命令，main.py中可执行全流程（train+eval）过程。
+- 依次执行withCNN_short.py和double_model_expect.py，是有望得到的长短寿命双模型法的最优精度：
+![image](https://user-images.githubusercontent.com/37606459/182013752-4aeae5b7-e275-4d03-86d5-25e6baa9648c.png)
+- 依次执行withCNN_short.py和double_model_real.py，是实际得到的长短寿命双模型法的精度，其测试集误差为9.28%。
 
 ## 5. 代码结构与简要说明
 
