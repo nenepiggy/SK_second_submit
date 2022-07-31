@@ -1,1 +1,3 @@
-# SK_second_submit
+# 项目简介
+    本项目用以参加《Data-driven prediction of battery cycle life before capacity degradation》论文复现比赛。
+    为实现容量早期预测，我们使用了CNN模型，达到了9.2%的测试集误差（MAPE）。此外，通过对特征相关性的分析，我们还给出了一种长寿命模型与短寿命模型分离的可行方案，在该方案下，测试集误差有望达到8.7%（MAPE），然而由于某些中间关节没有打通，最后也仅能达到9.2%左右。同样写在这里以供参考。关于本文所用模型的详细信息请参见“昇科比赛开发报告.docx”
