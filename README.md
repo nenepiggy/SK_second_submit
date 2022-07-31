@@ -34,15 +34,17 @@
 
 ## 4. 开始使用
 
-### 4.1 模型训练
+### 4.1 CNN法
 
-- 简单说明一下训练（train.py）的命令，建议附一些简短的训练日志。
+- 将my_data.npy放入data文件夹后，可直接执行withCNN.py，该文件包括训练、验证过程。精度如下：
+![image](https://user-images.githubusercontent.com/37606459/182013559-e078b7f0-b6bc-4a4a-b167-b43b166cd405.png)
+- 预测结果与实际结果对比如下：
+![image](https://user-images.githubusercontent.com/37606459/182013569-e6055600-1a71-41b3-9533-410983650d24.png)
 
-- 可以简要介绍下可配置的超参数以及配置方法。
+### 4.2 长短寿命双模型法
 
-### 4.2 模型验证
-
-- 在这里简单说明一下验证（eval.py）的命令，需要提供原始数据等内容，并在文档中体现输出结果。
+- 该方法的具体信息请见文档“昇科比赛开发报告.docx”。
+- 依次执行withCNN_short.py和double_model_expect.py，是有望得到的长短寿命双模型法的最优精度。
 
 ### 4.3 项目主文件
 
