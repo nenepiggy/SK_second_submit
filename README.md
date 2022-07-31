@@ -25,8 +25,9 @@
 
 ### 3.2 准备数据
 
-- 数据的准备工作均在preprocess文件夹中
-
+- 本项目所用的数据文件对原始数据文件做了精简，为方便验证，可直接下载my_data.npy放在data文件夹中，下载地址：https://share.weiyun.com/Y4onAhzX
+- 也可选择通过preprocess文件夹中预处理文件，在原始数据文件（原文作者提供的batch....mat数据集）的基础上获取my_data.npy。
+  - LoadMatData.m 
 
 
 ## 4. 开始使用
